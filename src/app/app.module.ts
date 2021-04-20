@@ -8,6 +8,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { StlCoffeeComponent } from './stl-coffee/stl-coffee.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { PublicReviewsComponent } from './public-reviews/public-reviews.component';
+import { MapComponent } from './map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,16 @@ import { PublicReviewsComponent } from './public-reviews/public-reviews.componen
     ProfileComponent,
     StlCoffeeComponent,
     ReviewsComponent,
-    PublicReviewsComponent
+    PublicReviewsComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAcUSugiFf5ZW-JTnDERKVuKDUdfqbvj9Y',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
