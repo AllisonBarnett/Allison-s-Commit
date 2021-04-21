@@ -9,7 +9,7 @@
 body {
     line-height: 1.4;
     color: white;
-    background: url('./assets/b2.png') no-repeat center center/cover;
+    background: url('./assets/ba1.png') no-repeat center center/cover;
 }
 
 .container {
@@ -165,7 +165,7 @@ body {
 
 .nav-menu-wrap .toggler:checked ~ .nav-menu > div > div {
     opacity: 1;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease 0.4s;
 }
 
 .nav-menu-wrap .nav-menu {
@@ -204,9 +204,9 @@ body {
 
 .nav-menu-wrap .nav-menu > div > div >ul >li {
     list-style: none;
+    color: white;
     font-size: 2rem;
     padding: 1rem;
-    color: white;
     z-index:2; 
 }
 
