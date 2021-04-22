@@ -5,6 +5,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { StlCoffeeComponent } from './stl-coffee/stl-coffee.component';
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'profile', component: ProfileComponent},
